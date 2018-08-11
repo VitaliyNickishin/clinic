@@ -1,0 +1,47 @@
+/*Specification*/
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+p, h1, h5 {
+  margin: 0; }
+
+body {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000; }
+
+input {
+  outline: none;
+  border-top: 0; }
+
+.sale {
+  background: #ebf7ff; }
+  .sale p {
+    font-size: 13px;
+    color: #666; }
+    .sale p a {
+      color: #3598db; }
+
+.selectcity select {
+  padding: 5px 10px;
+  width: 150px;
+  height: 30px; }
+  .selectcity select option {
+    color: #326795; }
+    .selectcity select option:hover {
+      cursor: pointer;
+      color: #3598db; }
+
+.clinic {
+  width: 120px;
+  height: 30px;
+  background: #c5e8ff;
+  color: #326795;
+  border: none; }
+  .clinic a {
+    display: block;
+    text-decoration: none;
+    color: #326795; }

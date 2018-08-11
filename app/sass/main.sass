@@ -21,15 +21,26 @@ input
  outline: none
  border-top: 0
 
+button
+	padding: 0 
+	border: none
+
+/*hero section*/
+
 .sale
 	background: $bg-sale
  p
+ 	padding: 13px 0
  	font-size: 13px
  	color: $second-text
+ 	span
+ 		padding-left: 13px
  	a
    color: $active-text
+   text-decoration: underline
 .selectcity
-	//text-align: right
+	padding: 8px 0
+	text-align: right
 	select
 		padding: 5px 10px
 		width: 150px
@@ -46,17 +57,86 @@ input
 	height: 30px
  background: $btn-clinic
  color: #326795
- border: none
  a
  	display: block
  	text-decoration: none
   color: #326795
 
+.header
+ .row
+  margin-top: 20px
+.logo
+	//padding: 20px 0
+	position: relative
+	p
+		position: absolute
+		top: 43px
+		left: 112px
+		//top: 63px
+		//left: 112px
+.location
+ address
+ 	margin: 0
+		img
+			width: 20px
+			color: $active-text
+			vertical-align: top
+		p
+			padding-left: 5px
+			display: inline-block
+			line-height: 1.2
+	.time
+		padding-top: 5px
+		img
+			width: 17px
+			vertical-align: top
+		p
+			padding-left: 5px
+			display: inline-block
+		span
+			color: $active-text
+   font-weight: 700
+.info
+	button
+		margin-left: 16px
+		position: relative
+		display: inline-block
+		width: 120px
+		height: 65px
+		background: $btn-info
+		border: none
+		text-align: left
+		opacity: 0.8
+		&:hover
+   opacity: 1
+		img
+   position: absolute
+   top: 10px
+   right: 10px
+			height: 40px
+			opacity: 0.2
+		a
+			display: block
+			padding: 10px 0 10px 20px
+			text-decoration: none
+			color: $menu-text
 
-
-
-
-
+.phone
+	text-align: right
+	p
+		font-size: 30px
+		font-weight: 700
+	a
+		color: #93c8ec
+		//padding-right: 5px
+		text-decoration: none
+		border-bottom: 1px dashed #93c8ec
+	img
+  position: relative
+  top: 0
+  right: 0
+  height: 20px
+ 
 
 
 

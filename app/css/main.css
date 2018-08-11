@@ -8,7 +8,7 @@ p, h1, h5 {
   margin: 0; }
 
 body {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Proxima Nova', 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #000; }
@@ -21,7 +21,21 @@ button {
   padding: 0;
   border: none; }
 
-/*hero section*/
+.btn-more {
+  width: 200px;
+  border: 2px solid #fc4f3f;
+  background: transparent; }
+  .btn-more a {
+    padding: 12px 0;
+    color: #fc4f3f;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+
+/*section sale*/
 .sale {
   background: #ebf7ff; }
   .sale p {
@@ -57,8 +71,10 @@ button {
     text-decoration: none;
     color: #326795; }
 
-.header .row {
-  margin-top: 20px; }
+/*header*/
+.header {
+  background: #fff;
+  margin: 20px 0; }
 
 .logo {
   position: relative; }
@@ -128,3 +144,120 @@ button {
     top: 0;
     right: 0;
     height: 20px; }
+
+/*section menu*/
+.menu {
+  background: #133755;
+  font-size: 17px;
+  position: relative; }
+  .menu-bar {
+    height: 60px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .menu-bar li {
+      margin-right: 35px; }
+      .menu-bar li a {
+        text-decoration: none;
+        color: #fff;
+        display: block; }
+      .menu-bar li .toggleSubmenu {
+        display: none; }
+        .menu-bar li .toggleSubmenu i {
+          position: absolute;
+          top: 40px;
+          left: 195px;
+          font-size: 18px;
+          color: #fff; }
+
+.sub {
+  position: absolute;
+  top: 60px;
+  left: 130px;
+  background: #326795;
+  width: 220px;
+  display: none; }
+  .sub li a {
+    background: #133755;
+    font-size: 15px; }
+
+input:checked ~ .sub {
+  display: block;
+  position: relative; }
+
+.menu-bar label.toggleSubmenu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block; }
+
+input:checked ~ a {
+  background: #326795;
+  color: #fff; }
+
+/*section menu*/
+.slider {
+  background: #f7fbfc url(../img/malysh.png) no-repeat 70% 900%;
+  height: 460px; }
+
+.bg-services {
+  background: rgba(251, 253, 254, 0.6); }
+
+.services {
+  padding: 12px 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .services_move {
+    margin-left: -45px; }
+  .services img {
+    height: 40px; }
+  .services a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: #000; }
+
+.title {
+  margin: 50px 0; }
+  .title h1 {
+    font-size: 48px;
+    font-weight: 700; }
+    .title h1 span {
+      color: #3598db; }
+  .title-btn {
+    margin-top: 35px; }
+    .title-btn a:hover {
+      background: #fc4f3f;
+      color: #fff; }
+
+.rectangle {
+  margin-bottom: 20px; }
+  .rectangle input {
+    display: none; }
+  .rectangle__item {
+    margin-right: 10px;
+    width: 50px;
+    height: 8px;
+    cursor: pointer;
+    background: #fff; }
+
+#photo1:checked ~ .label1 {
+  background: #3598db; }
+
+#photo2:checked ~ .label2 {
+  background: #3598db; }
+
+#photo3:checked ~ .label3 {
+  background: #3598db; }

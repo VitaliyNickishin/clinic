@@ -199,9 +199,9 @@ input:checked ~ a {
   background: #326795;
   color: #fff; }
 
-/*section menu*/
+/*section slider*/
 .slider {
-  background: #f7fbfc url(../img/malysh.png) no-repeat 70% 900%;
+  background: #f7fbfc url(../img/malysh.png) no-repeat 70% 100%;
   height: 460px; }
 
 .bg-services {
@@ -261,3 +261,32 @@ input:checked ~ a {
 
 #photo3:checked ~ .label3 {
   background: #3598db; }
+
+/*section about*/
+.about {
+  padding: 24px 0 28px;
+  background: #133755; }
+  .about__item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .about__item_move {
+      margin-left: 20px; }
+    .about__item img {
+      width: 48px;
+      height: 46px; }
+    .about__item p {
+      margin-left: 20px;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #fff; }
+    .about__item span {
+      text-transform: lowercase; }

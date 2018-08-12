@@ -203,10 +203,10 @@ input:hover ~ a
  background: 
  color: 
 
-/*section menu*/
+/*section slider*/
 
 .slider
-	background: #f7fbfc url(../img/malysh.png) no-repeat 70% 900%
+	background: #f7fbfc url(../img/malysh.png) no-repeat 70% 100%
 	height: 460px
 .bg-services
 	background: rgba(251, 253, 254, 0.6)
@@ -260,5 +260,26 @@ input:hover ~ a
 	&:checked ~ .label3
 		background: $active-text
 
-
-
+/*section about*/
+.about
+	padding: 24px 0 28px
+	background: $bg-menu
+	&__item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		&_move
+			margin-left: 20px
+		img
+			width: 48px
+			height: 46px
+		p
+			margin-left: 20px
+			font-size: 15px
+			text-transform: uppercase
+			color: $menu-text
+  span
+  	text-transform: lowercase

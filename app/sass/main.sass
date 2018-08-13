@@ -1,5 +1,5 @@
 @import "colors" //интегрируем переменные с цветами
-//@import "fontello" //иконки с fontello
+@import "fontello" //иконки с fontello
 
 /*Specification*/
 
@@ -83,36 +83,53 @@ button
 
 .sale
 	background: $bg-sale
+	height: 45px
  p
- 	padding: 13px 0
  	font-size: 13px
  	color: $second-text
+ 	line-height: 45px
  	span
  		padding-left: 13px
  	a
    color: $active-text
    text-decoration: underline
-.selectcity
-	padding: 8px 0
-	text-align: right
+.select-city
+	padding: 7px 0
 	select
-		padding: 5px 10px
-		width: 150px
+		padding: 3px 10px
+		width: 180px
 	 height: 30px
+	 border: 1px solid rgba(197, 232, 255, 0.8)
+	 appearance: none
+	 color: $bg-sub
+	 cursor: pointer
+	 &:focus
+	  outline: none
+	  color: $bg-sub
+	  border: 1px solid rgba(197, 232, 255, 0.8)
+	  cursor: pointer
 		option
-			color: #326795
-	  &:hover
-	  	cursor: pointer
+			color: $body-text
+	  &:focus
 	  	color: $active-text
+
+.select-icon /*cтрелка для городов*/
+ position: absolute
+ top: 8px
+ right: 116px
+ color: $bg-sub
+ font-size: 20px
+ pointer-events: none
+
 .clinic
 	width: 120px
 	height: 30px
  background: $btn-clinic
- color: #326795
+ color: $bg-sub
  a
  	display: block
  	text-decoration: none
-  color: #326795
+  color: $bg-sub
 
 /*header*/
 
@@ -193,54 +210,59 @@ button
 	background: $bg-menu
  font-size: 17px
  position: relative
- &-bar
- 	height: 60px
- 	align-items: center
- 	li
- 		margin-right: 35px
- 		a
- 			text-decoration: none
-    color: $menu-text
-    display: block
-   .toggleSubmenu /*label*/
-			  display: none
-     i /*иконка угол вниз*/
-   	  position: absolute
-    		top: 40px
-   			left: 195px
-   			font-size: 18px
-   			color: $menu-text 
+
+.menu-bar
+ height: 60px
+ align-items: center
+ &>li
+  margin-right: 35px
+  &>a
+		 text-decoration: none
+		 color: $menu-text
+		 display: block
+  &>input 
+	  display: none
+	  position: relative
+   &:checked ~ .sub
+	   display: block
+  &>label
+  	margin: 0
+  	display: block
+  	color: $menu-text
+  	cursor: pointer
+.services-icon /*иконка угол вниз*/
+	position: absolute
+	top: 35px
+	left: 190px
+	font-size: 18px
+	color: $menu-text 
 
 .sub /*под меню*/
+	display: none
+	width: 220px
 	position: absolute
 	top: 60px
 	left: 130px
 	background: $bg-sub
-	width: 220px
-	display: none
+	z-index: 1
  li
-  
- 	a
- 		background: $bg-menu
+ 	&:first-child /*верхний отступ*/
+ 		padding-top: 11px
+ 	&:last-child /*нижний отступ*/
+ 		padding-bottom: 11px
+ 	&>a
+ 		display: block
+ 		padding: 4px 0 4px 15px
+ 		position: relative
+ 		text-decoration: none
+		 color: $menu-text
  		font-size: 15px
+ 		&:hover
+ 			background: $bg-menu
 
-input:checked ~ .sub
-	display: block			
- position: relative
-.menu-bar label.toggleSubmenu
- position: absolute
- top: 0px
- left: 0px
- width: 100%
- height: 100%
- cursor: pointer
- display: block
-input:checked ~ a
- background: $bg-sub
- color: $menu-text
-input:hover ~ a
- background: 
- color: 
+
+
+
 
 /*section slider*/
 

@@ -10,8 +10,8 @@
 	<!--Fonts Googlle-->  
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
  
-  <!--Font Awesome  -->
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <!--Font Awesome 
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
 
 	
 
@@ -28,8 +28,9 @@
 						<p>Внимание! Акция! До 31 мая бесплатный  прием репродуктолога<span><a href="#">Подробнее</a></span></p>
 
 					</div><!-- /.col-lg-6 -->
-					<div class="col-lg-4 ml-auto">
-						<div class="selectcity">
+					<div class="col-lg-3 ml-auto">
+						<div class="select-city d-flex">
+       <i class="icon-angle-down select-icon"></i>
        <select>
         <option selected value="Белгород"><a href="#">Белгород</a></option>
         <option value="Москва"><a href="#">Москва</a></option>
@@ -39,7 +40,7 @@
        </select>
        <button class="clinic"><a href="#">Все клиники</a></button>
       </div><!-- /.selectcity -->
-					</div><!-- /.col-lg-4 -->
+					</div><!-- /.col-lg-3 -->
 				</div><!-- /.row -->
 			</div><!-- /.container -->
 		</div><!-- /.sale -->
@@ -93,13 +94,12 @@
  		<div class="row">
  			<div class="col-lg-12">
  				<nav>
- 					<ul class="menu-bar d-flex">
+ 					<ul class="menu-bar d-flex" id="nav">
  						<li><a href="#">Цены</a></li>
  						<li><a href="#">Акции</a></li>
  						<li>
- 							<input type="checkbox" name="toggle" class="toggleSubmenu" id="sub">
- 							<a href="#">Услуги</a>
- 							<label for="sub" class="toggleSubmenu"><i class="fas fa-angle-down"></i></label>
+ 							<input type="checkbox" name="toggle" id="services">
+ 							<label for="services">Услуги<i class="icon-angle-down services-icon"></i></label>
         <ul class="sub">
         	<li><a href="#">Суррогатное материнство</a></li>
         	<li><a href="#">ИКСИ</a></li>

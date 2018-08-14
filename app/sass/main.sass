@@ -47,9 +47,9 @@ button
 	 	color: $text-title
 
 .services-block /*блок для секции наши услуги*/
+	display: block
 	position: relative
 	width: 250px
-	display: block
 	height: 130px
 	&:hover
 	 box-shadow: 0 0 0 5px $active-text
@@ -70,6 +70,9 @@ button
 		position: absolute
 		top: 0
 		left: 0
+		&_size /*для 16 блока*/
+			width: 35px
+			padding-left: 10px
  &__text
   position: absolute
 		bottom: 18px
@@ -78,6 +81,20 @@ button
 		font-weight: 700
 		color: $menu-text
 
+.tv-block /*блок с видео*/
+	display: block
+	position: relative
+	width: 250px
+	height: 130px
+	&:hover
+		box-shadow: 0 0 0 5px $active-text
+	&__img
+		height: 130px
+	&__icon
+		width: 60px
+		position: absolute
+		top: 38px
+		left: 92px
 
 /*section sale*/
 
@@ -246,7 +263,7 @@ button
 	 height: 20px
 	 z-index: 5
 
-.sub /*под меню*/
+.sub /*под меню для услуги*/
 	display: none
 	width: 220px
 	position: absolute
@@ -323,10 +340,8 @@ button
 /*section slider*/
 
 .slider
-	background: #f7fbfc url(../img/malysh.png) no-repeat 70% 100%
-	height: 460px
 .bg-services
-	background: rgba(251, 253, 254, 0.6)
+	background: $bg-sale
 .services
 	padding: 12px 0
  display: -webkit-flex
@@ -343,39 +358,7 @@ button
   padding-left: 20px
   text-decoration: none
   color: $body-text
-.slider-title
-	margin: 50px 0
-	h1
-		font-size: 48px
-	 font-weight: 700
-		span
-			color: $active-text
- &__btn
- 	margin-top: 35px
- 	a
-	 	&:hover
-	 		background: $btn
-	 		color: $menu-text
 
-.rectangle /*прямоугольные кнопки*/
-	margin-bottom: 20px
-	input /*радио-кнопки*/
-		display: none
-	&__item
-		margin-right: 10px
-		width: 50px
-	 height: 8px
- 	cursor: pointer
- 	background: $menu-text
-#photo1 /*для переключения*/
-	&:checked ~ .label1
-		background: $active-text
-#photo2
-	&:checked ~ .label2
-		background: $active-text
-#photo3
-	&:checked ~ .label3
-		background: $active-text
 
 /*section about*/
 .about
@@ -403,13 +386,14 @@ button
 
 /*section our-services*/
 .our-services
-	text-align: center
 	&-title
+		text-align: center
 		h2
 			padding-top: 60px
 		p
 			padding: 35px 0 20px
 			font-size: 16px
+			text-align: left
 .eko /*1й блок*/
 	&__img
 		background: url(../img/pregnancy-2.png) no-repeat center
@@ -430,7 +414,7 @@ button
 		background: url(../img/surogat.png) no-repeat 
 	 background-size: cover
 
-.second-row, .third-row
+.second-row, .third-row, .fourth-row
  margin-top: 40px
 
 .donor /*5й блок*/
@@ -473,40 +457,81 @@ button
 		background: url(../img/sakit.jpg) no-repeat 
 	 background-size: cover
 
-.services__btn
-	margin: 45px 0 85px
-.btn-show
-	width: 325px
-	height: 50px
-	background: $btn-info
-	position: relative 
- opacity: 0.8
- &:hover
-		z-index: 1
-		opacity: 1
-		//border: 2px solid rgba(229, 56, 40, 1)
- &:after
-		content: ""
+.besplodiya /*13й блок*/
+	&__img
+		background: url(../img/besplodiya.jpg) no-repeat 
+	 background-size: cover
+
+.insemination /*14й блок*/
+	&__img
+		background: url(../img/insemination.jpg) no-repeat 
+	 background-size: cover
+
+.oplodotvoreniye /*15й блок*/
+	&__img
+		background: url(../img/oplodotvoreniye.jpg) no-repeat 
+	 background-size: cover
+
+.sperma /*16й блок*/
+	margin-bottom: 100px
+	&__img
+		background: url(../img/sperma.jpg) no-repeat 
+	 background-size: cover
+
+/*section banner*/
+.banner
+	padding-top: 100px
+	//border-top: 2px solid rgba(0, 0, 0, 0.1)
+	box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.4)
+	&-img
+	 margin-bottom: 50px
+		background: url(../img/banner.jpg) no-repeat 0% 25%
+		//background-size: cover
+	 height: 250px
+ &-content
+ 	padding-top: 20px
+	 &__text
+	 	padding-left: 20px
+	 	background: $active-text
+	 	color: $menu-text
+	 	width: 40%
+	 &__tel
+	 	padding-left: 20px
+	 	.start
+    font-size: 20px
+	 	.end
+	 		color: $active-text
+	 		font-size: 20px
+	 small
+   padding-left: 20px
+	
+.tv /*видео*/
+.love /*1й блок*/
+	margin-right: 20px
+	&__img
+		background: url(../img/love.jpg) no-repeat 
+		background-size: cover
+.zamershaja /*2й блок*/
+	&__img
+		background: url(../img/zamershaja.jpg) no-repeat 
+		background-size: cover
+
+.base /*базы в exel*/
+.oocit
+	display: block
+	position: relative
+	width: 250px
+	height: 200px
+	box-shadow: 1px 1px 1px 1px #000
+	&__item
+	&__icon
+		width: 80px
 		position: absolute
-		top: 4px
-		left: 4px
-		width: 325px
-		height: 50px
-		//border: 2px solid rgba(229, 56, 40, 0.8)
-		border: 2px solid #fff
-		//background: transparent
-		//z-index: -1
-	
- a
- 	font-size: 19px
- 	color: $menu-text
- 	text-decoration: none
- 	display: block
- 	height: 100%
- 	line-height: 50px
-	 
-	 
+		top: 60px
+		left: 80px
 
-	
-
+	&__text
+  position: absolute
+		bottom: 25px
+		left: 45px
  

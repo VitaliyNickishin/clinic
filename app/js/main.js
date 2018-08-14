@@ -26,6 +26,20 @@ $(document).click(function(event) {
     $('.sb').removeClass('sb_opened');
     event.stopPropagation();
 });
+
+
+/**/
+$('#services').click(function(){
+  $('.icon-angle-down').toggleClass('icon_close');
+})
+
+
+
+
+
+
+
+
 }); 
 
 

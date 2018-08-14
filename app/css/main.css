@@ -304,9 +304,15 @@ button {
 .services-icon {
   position: absolute;
   top: 35px;
-  left: 190px;
+  left: 182px;
   font-size: 18px;
   color: #fff; }
+  .services-icon_up {
+    top: -26px;
+    left: 52px;
+    width: 20px;
+    height: 20px;
+    z-index: 5; }
 
 .sub {
   display: none;
@@ -316,7 +322,7 @@ button {
   left: 130px;
   background: #326795;
   z-index: 1; }
-  .sub li:first-child {
+  .sub li:nth-child(2) {
     padding-top: 11px; }
   .sub li:last-child {
     padding-bottom: 11px; }
@@ -383,6 +389,9 @@ button {
 
 .sb_opened {
   display: block; }
+
+.icon_close {
+  display: none; }
 
 /*section slider*/
 .slider {

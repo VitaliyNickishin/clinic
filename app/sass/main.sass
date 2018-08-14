@@ -19,7 +19,7 @@ body
 
 input
  outline: none
- border-top: 0
+ border: none
 
 button
 	padding: 0 
@@ -93,7 +93,7 @@ button
  	a
    color: $active-text
    text-decoration: underline
-.select-city
+.select-city /*Выбор городов*/
 	padding: 7px 0
 	select
 		padding: 3px 10px
@@ -121,7 +121,7 @@ button
  font-size: 20px
  pointer-events: none
 
-.clinic
+.clinic /*кнопка все клинки*/
 	width: 120px
 	height: 30px
  background: $btn-clinic
@@ -215,7 +215,10 @@ button
  height: 60px
  align-items: center
  &>li
-  margin-right: 35px
+  //margin-right: 35px
+  margin-right: 30px
+  &:nth-child(10)
+  	margin-right: 39px
   &>a
 		 text-decoration: none
 		 color: $menu-text
@@ -261,6 +264,52 @@ button
  			background: $bg-menu
 
 
+.search-button /*кнопка поиска*/
+ width: 60px
+ height: 60px
+ background: $bg-sub
+ cursor: pointer
+ i
+  color: $menu-text
+
+.sb /*форма поиска*/
+	position: absolute
+	right: 15px
+	top: 64px
+	display: none
+	z-index: 1
+ &-input
+ 	position: absolute
+ 	top: 0px
+ 	left: -300px
+ 	width: 300px
+ 	background: $bg-sub
+ 	padding-left: 20px
+ 	height: 60px
+ 	font-size: 14px
+ 	color: $menu-text
+ 	&::placeholder
+ 		color: $menu-text
+	&-search
+	 width: 60px
+	 height: 60px
+	 background: $bg-sub
+	 cursor: pointer
+	 i
+	  color: $menu-text
+	&-cancel
+	 position: absolute
+	 top: -64px
+	 width: 60px
+	 height: 60px
+	 background: $bg-sub
+	 cursor: pointer
+	 i
+	  color: $menu-text
+
+.sb_opened /*класс для открытия формы поиска*/
+ display: block 
+ //opacity: 1	
 
 
 

@@ -13,7 +13,7 @@ p, h1, h2
 
 body
  font-family: 'Proxima Nova', 'Roboto', sans-serif
- font-size: 15px
+ font-size: 14px
  font-weight: 400
  color: $body-text
 
@@ -77,7 +77,7 @@ button
   position: absolute
 		bottom: 18px
 		left: 15px
-		font-size: 17px
+		font-size: 14px
 		font-weight: 700
 		color: $menu-text
 
@@ -160,6 +160,7 @@ button
 		top: 43px
 		left: 112px
 .location
+	font-size: 13px
  address
  	margin: 0
 		img
@@ -172,6 +173,7 @@ button
 			line-height: 1.2
 	.time
 		padding-top: 5px
+
 		img
 			width: 17px
 			vertical-align: top
@@ -225,17 +227,15 @@ button
 
 .menu
 	background: $bg-menu
- font-size: 17px
  position: relative
 
 .menu-bar
  height: 60px
  align-items: center
  &>li
-  //margin-right: 35px
-  margin-right: 30px
+  margin-right: 35px
   &:nth-child(10) /*пункт контакты в меню*/
-  	margin-right: 39px
+  	margin-right: 115px
   &>a
 		 text-decoration: none
 		 color: $menu-text
@@ -253,12 +253,12 @@ button
 .services-icon /*иконка вниз*/
 	position: absolute
 	top: 35px
-	left: 182px
+	left: 170px
 	font-size: 18px
 	color: $menu-text 
 	&_up /*иконка вверх*/
 		top: -26px
-	 left: 52px
+	 left: 60px
 	 width: 20px
 	 height: 20px
 	 z-index: 5
@@ -268,7 +268,7 @@ button
 	width: 220px
 	position: absolute
 	top: 60px
-	left: 130px
+	left: 110px
 	background: $bg-sub
 	z-index: 1
  li
@@ -282,18 +282,19 @@ button
  		position: relative
  		text-decoration: none
 		 color: $menu-text
- 		font-size: 15px
+ 		font-size: 13px
  		&:hover
  			background: $bg-menu
 
 
 .search-button /*кнопка поиска*/
- width: 60px
+ width: 70px
  height: 60px
  background: $bg-sub
  cursor: pointer
  i
   color: $menu-text
+  //font-size: 24px
 
 .sb /*форма поиска*/
 	position: absolute
@@ -309,12 +310,12 @@ button
  	background: $bg-sub
  	padding-left: 20px
  	height: 60px
- 	font-size: 14px
+ 	font-size: 13px
  	color: $menu-text
  	&::placeholder
  		color: $menu-text
 	&-search /*кнопка поиска*/
-	 width: 60px
+	 width: 70px
 	 height: 60px
 	 background: $bg-sub
 	 cursor: pointer
@@ -323,12 +324,14 @@ button
 	&-cancel /*кнопка закрытия*/
 	 position: absolute
 	 top: -64px
-	 width: 60px
+	 left: 0px
+	 width: 70px
 	 height: 60px
 	 background: $bg-sub
 	 cursor: pointer
 	 i
 	  color: $menu-text
+	  //font-size: 24px
 
 .sb_opened /*класс для открытия формы поиска*/
  display: block 
@@ -355,9 +358,10 @@ button
 	img
 		height: 40px
 	a
-  padding-left: 20px
+  padding-left: 25px
   text-decoration: none
   color: $body-text
+  font-size: 13px
 
 
 /*section about*/
@@ -386,14 +390,29 @@ button
 
 /*section our-services*/
 .our-services
-	&-title
-		text-align: center
-		h2
-			padding-top: 60px
-		p
-			padding: 35px 0 20px
-			font-size: 16px
-			text-align: left
+	box-shadow: 0px 5px 15px -2px rgba(210, 210, 210, 0.4)
+.breadcrumbs /*переход по страницам*/
+	padding-top: 25px
+	&__home
+		a
+			text-decoration: none
+			color: $active-text
+			text-decoration: underline
+	&__services
+		margin-left: 30px
+		position: relative
+		i
+		 color: $active-text
+		 position: absolute
+		 left: -17px
+.services-title /*заголовок раздела*/
+	text-align: center
+	h2
+		padding-top: 35px
+	p
+		padding: 35px 0 20px
+		font-size: 14px
+		text-align: left
 .eko /*1й блок*/
 	&__img
 		background: url(../img/pregnancy-2.png) no-repeat center
@@ -473,37 +492,37 @@ button
 	 background-size: cover
 
 .sperma /*16й блок*/
-	margin-bottom: 100px
+	margin-bottom: 75px
 	&__img
 		background: url(../img/sperma.jpg) no-repeat 
 	 background-size: cover
 
 /*section banner*/
 .banner
-	padding-top: 100px
-	//border-top: 2px solid rgba(0, 0, 0, 0.1)
-	box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.4)
+	padding-top: 65px
 	&-img
 	 margin-bottom: 50px
 		background: url(../img/banner.jpg) no-repeat 0% 25%
 		//background-size: cover
-	 height: 250px
+	 height: 200px
  &-content
- 	padding-top: 20px
+ 	padding-top: 27px
+ 	//font-size: 22px
+ 	max-width: 545px
 	 &__text
-	 	padding-left: 20px
+	 	padding-left: 35px
 	 	background: $active-text
 	 	color: $menu-text
-	 	width: 40%
+	 	//width: 40%
 	 &__tel
-	 	padding-left: 20px
+	 	padding-left: 35px
 	 	.start
     font-size: 20px
 	 	.end
 	 		color: $active-text
 	 		font-size: 20px
 	 small
-   padding-left: 20px
+   padding-left: 35px
 	
 .tv /*видео*/
 .love /*1й блок*/
@@ -529,7 +548,6 @@ button
 		position: absolute
 		top: 60px
 		left: 80px
-
 	&__text
   position: absolute
 		bottom: 25px

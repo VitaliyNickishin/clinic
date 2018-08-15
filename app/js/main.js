@@ -19,14 +19,14 @@ $('.search-button').click(function(){
   $('.sb').toggleClass('sb_opened');
 })
 
-/*закрытие формы поиска*/
+/*закрытие формы поиска
 
 $(document).click(function(event) {
     if ($(event.target).closest(".search-button").length ) return;
     $('.sb').removeClass('sb_opened');
     event.stopPropagation();
 });
-
+*/
 
 /**/
 $('#services').click(function(){

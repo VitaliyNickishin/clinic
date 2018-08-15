@@ -28,11 +28,10 @@ $(document).click(function(event) {
 });
 */
 
-/**/
+/*разворачивающаяся стрелка при открытии под меню*/
 $('#services').click(function(){
   $('.icon-angle-down').toggleClass('icon_close');
 })
-
 
 
 

@@ -26,7 +26,6 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<p>Внимание! Акция! До 31 мая бесплатный  прием репродуктолога<span><a href="#">Подробнее</a></span></p>
-
 					</div><!-- /.col-lg-6 -->
 					<div class="col-lg-3 ml-auto">
 						<div class="select-city d-flex">
@@ -38,7 +37,7 @@
         <option value="Владимир"><a href="#">Владимир</a></option>
         <option value="Брянск"><a href="#">Брянск</a></option>
        </select>
-       <button class="clinic"><a href="#">Все клиники</a></button>
+       <button class="btn-clinic"><a href="#">Все клиники</a></button>
       </div><!-- /.selectcity -->
 					</div><!-- /.col-lg-3 -->
 				</div><!-- /.row -->
@@ -57,22 +56,22 @@
 				<div class="col-lg-3">
 					<div class="location">
 						<address>
-							<img src="img/map.png" alt="map">
+							<i class="icon-location"></i>
 							<p>Белгород,<br>ул. Красноармейская, д. 41, пом. 8</p>
 						</address>
 						<div class="time">
-							<img src="img/time.png" alt="time">
+							<i class="icon-clock"></i>
 							<p>Ежедневно <span>с 9:00 до 21:00</span></p>
-						</div><!-- /.work -->
-					</div><!-- /.address -->
+						</div><!-- /.time -->
+					</div><!-- /.location -->
 				</div><!-- /.col-lg-3 -->
 				<div class="col-lg-3">
 					<div class="info">
-						<button class="signing">
-							<img src="img/signing.png" alt="signing">
+						<button class="signing btn-info">
+							 <img src="img/signing.png" alt="signing">
 							<a href="#">Записаться<br>на прием</a>
 						</button>
-						<button class="question">
+						<button class="question btn-info">
 							<img src="img/question.png" alt="question">
 							<a href="#">Задать<br>вопрос</a>
 						</button>
@@ -94,7 +93,7 @@
  		<div class="row">
  			<div class="col-lg-12">
  				<nav>
- 					<ul class="menu-bar d-flex" id="nav">
+ 					<ul class="menu-header d-flex" id="nav">
  						<li><a href="#">Цены</a></li>
  						<li><a href="#">Акции</a></li>
  						<li>
@@ -332,6 +331,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="banner-img">
+					<img src="img/banner.jpg" alt="banner">
 					<div class="banner-content">
 						<p class="banner-content__text">Бесплатный прием репродуктолога<br> в клинике "Центр ЭКО" - <strong>только до 12 июля!</strong></p>
 						<p class="banner-content__tel">Запись по тел:<strong><span class="start"> +7(800)</span><span class="end"> 500-76-28</span></strong></p>
@@ -343,7 +343,7 @@
 		</div><!-- /.row -->
 		<div class="row">
 			<div class="col-lg-6">
-				<h2>ЭКО TV</h2>
+				<h2 class="tv-title title">ЭКО TV</h2>
 				<div class="tv d-flex">
 					<a href="#" class="love tv-block"> 
     		<div class="love__img tv-block__img"></div>
@@ -356,15 +356,15 @@
 				</div><!-- /.tv -->
 			</div><!-- /.col-lg-6 -->
 			<div class="col-lg-6">
-				<h2>Наши базы</h2>
+				<h2 class="base-title title">Наши базы</h2>
 				<div class="base d-flex">
-					<a href="#" class="oocit"> 
-    		<img src="img/excel.png" class="oocit__icon" alt="excel">
-    		<p class="oocit__text">База доноров ооцитов</p>
+					<a href="#" class="base-excel"> 
+    		<img src="img/excel.png" alt="excel">
+    		<p>База доноров ооцитов</p>
     	</a>
-					<a href="#" class="oocit"> 
-    		<img src="img/excel.png" class="oocit__icon" alt="excel">
-    		<p class="oocit__text">База доноров спермы</p>
+					<a href="#" class="base-excel"> 
+    		<img src="img/excel.png" alt="excel">
+    		<p>База доноров спермы</p>
     	</a>
 				</div><!-- /.base -->
 			</div><!-- /.col-lg-6 -->
@@ -373,7 +373,100 @@
 	</div><!-- /.container -->
 </section><!-- /.banner -->
 
-
+<footer class="footer">
+	<div class="footer-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="logo-footer">
+						<img src="img/logo-footer.png" alt="logo-footer">
+					</div><!-- /.logo-footer -->
+					<div class="menu-footer d-flex">
+						<ul class="menu-footer__one">
+						 <li><a href="#">Цены</a></li>
+						 <li><a href="#">Акции</a></li>
+						 <li><a href="#">Услуги</a></li>
+						 <li><a href="#">Наши врачи</a></li>
+						 <li><a href="#">Пациентам</a></li>
+						</ul>
+						<ul class="menu-footer__two">
+						 <li><a href="#">Донорам</a></li>
+						 <li><a href="#">Вопрос-ответ</a></li>
+						 <li><a href="#">Отзывы</a></li>
+						 <li><a href="#">О клинике</a></li>
+						 <li><a href="#">Контакты</a></li>
+						</ul>
+					</div><!-- /.menu-footer -->
+				</div><!-- /.col-lg-3 -->
+				<div class="col-lg-3">
+					<ul class="services-footer">
+						<li><a href="#">Лечение бесплодия</a></li>
+						<li><a href="#">ЭКО</a></li>
+						<li><a href="#">Суррогатное материнство</a></li>
+						<li><a href="#">Программы ЭКО</a></li>
+						<li><a href="#">ЭКО по ОМС</a></li>
+						<li><a href="#">Другие услуги</a></li>
+					</ul>
+				</div><!-- /.col-lg-3 -->
+				<div class="col-lg-3">
+     <div class="location location-footer">
+						<address>
+						 <i class="icon-location"></i>
+							<p>Белгород,<br>ул. Красноармейская, д. 41, пом. 8</p>
+						</address>
+						<div class="time">
+							<i class="icon-clock"></i>
+							<p>Ежедневно <span>с 9:00 до 21:00</span></p>
+						</div><!-- /.time -->
+						<div class="show-map">
+							<a href="#">Показать на карте</a>
+						</div><!-- /.show-map -->
+      <button class="btn-clinic-footer"><a href="#">Все клиники сети</a></button>
+					</div><!-- /.location -->
+				</div><!-- /.col-lg-3 -->
+    <div class="col-lg-3">
+     <div class="contacts">
+     	<div class="phone phone_rout">
+     		<p class="phone__number phone__number_color">8 (800) 500-76-28</p>
+     		<a href="#" class="phone__text">Обратный звонок</a>
+     	 <img src="img/smartphone.png" alt="smartphone">
+     	</div><!-- /.phone -->
+      <div class="info-footer">
+						 <button class="signing_f btn-info">
+							 <img src="img/signing.png" alt="signing">
+							 <a href="#">Записаться<br>на прием</a>
+						 </button>
+						 <button class="btn-info">
+							 <img src="img/question.png" alt="question">
+							 <a href="#">Задать<br>вопрос</a>
+						 </button>
+					 </div><!-- /.info-footer -->
+					 
+					 	<ul class="social d-flex">
+					 		<li><a href="#"><i class="icon-vk"></i></a></li>
+					 		<li><a href="#"><i class="icon-facebook"></i></a></li>
+					 		<li><a href="#"><i class="icon-odnoklassniki"></i></a></li>
+					 		<li><a href="#"><i class="icon-gplus"></i></a></li>
+					 		<li><a href="#"><i class="icon-twitter"></i></a></li>
+					 	</ul>
+					 
+     </div><!-- /.contacts -->
+				</div><!-- /.col-lg-3 -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</div><!-- /.footer-main -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="footer-copy">
+						<small>Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ст. 437 Гражданского кодекса Российской Федерации. Для получения подробной информации о стоимости услуг обращайтесь к администраторам медицинской клиники.
+      </small>
+      <p>Copyright © 2018 Центр ЭКО. All rights reserved</p>
+					</div><!-- /.footer-copy -->
+				</div><!-- /.col-lg-12 -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+</footer>
 
 
 

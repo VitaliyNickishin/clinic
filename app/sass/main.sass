@@ -96,6 +96,7 @@ button
  	a
    color: $active-text
    text-decoration: underline
+
 .select-city /*Выбор городов*/
 	padding: 7px 0
 	select
@@ -199,7 +200,6 @@ button
 .info /*кнопки записаться на прием и задать вопрос*/
 .signing
 	margin-right: 30px
-
 .phone
 	text-align: right
 	p
@@ -240,6 +240,7 @@ button
 	   display: block
   &>label
   	margin: 0
+  	padding: 20px 0
   	display: block
   	color: $menu-text
   	cursor: pointer
@@ -279,7 +280,6 @@ button
  		&:hover
  			background: $bg-menu
 
-
 .search-button /*кнопка поиска*/
  width: 70px
  height: 60px
@@ -287,7 +287,7 @@ button
  cursor: pointer
  i
   color: $menu-text
-  //font-size: 24px
+  font-size: 20px
 
 .sb /*форма поиска*/
 	position: absolute
@@ -314,6 +314,7 @@ button
 	 cursor: pointer
 	 i
 	  color: $menu-text
+	  font-size: 20px
 	&-cancel /*кнопка закрытия*/
 	 position: absolute
 	 top: -64px
@@ -324,11 +325,10 @@ button
 	 cursor: pointer
 	 i
 	  color: $menu-text
-	  //font-size: 24px
+	  font-size: 20px
 
 .sb_opened /*класс для открытия формы поиска*/
  display: block 
- //opacity: 1	
 .icon_close /*класс для скрытия иконки вниз*/
 	display: none
 
@@ -346,16 +346,17 @@ button
  display: -o-flex
  display: flex
  align-items: center
+ color: $body-text
+ &:hover
+  color: $body-text
+ 	text-decoration: none
  &_move
- 	margin-left: -45px
+ 	margin-left: -40px
 	img
 		height: 40px
-	a
+	p
   padding-left: 25px
-  text-decoration: none
-  color: $body-text
   font-size: 13px
-
 
 /*section about*/
 .about
@@ -398,6 +399,7 @@ button
 		 color: $active-text
 		 position: absolute
 		 left: -17px
+
 .services-title /*заголовок раздела*/
 	text-align: center
 	h2
@@ -406,6 +408,7 @@ button
 		padding: 35px 0 20px
 		font-size: 14px
 		text-align: left
+
 .eko /*1й блок*/
 	&__img
 		background: url(../img/pregnancy-2.png) no-repeat center
@@ -527,15 +530,25 @@ button
 	
 .tv-title
 	font-size: 28px
-	margin-bottom: 30px
+	//margin-bottom: 30px
 .tv /*видео*/
 	margin-bottom: 80px
+	width: 570px
+	//height: 200px
+	overflow: hidden
+ overflow-x: scroll
+ white-space: nowrap
 .love /*1й блок*/
-	margin-right: 30px
+	margin: 30px 10px 20px 5px
+	display: inline-block
+ vertical-align: top
 	&__img
 		background: url(../img/love.jpg) no-repeat 
 		background-size: cover
 .zamershaja /*2й блок*/
+	margin: 30px 10px 20px 5px
+	display: inline-block
+ vertical-align: top
 	&__img
 		background: url(../img/zamershaja.jpg) no-repeat 
 		background-size: cover
@@ -573,7 +586,7 @@ button
   position: absolute
 		bottom: 38px
 		left: 35px
-  
+
 .footer
  background: $bg-menu 	
  &-main

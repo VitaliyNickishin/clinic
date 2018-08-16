@@ -335,6 +335,7 @@ button {
         display: block; }
     .menu-header > li > label {
       margin: 0;
+      padding: 20px 0;
       display: block;
       color: #fff;
       cursor: pointer; }
@@ -380,7 +381,8 @@ button {
   background: #326795;
   cursor: pointer; }
   .search-button i {
-    color: #fff; }
+    color: #fff;
+    font-size: 20px; }
 
 .sb {
   position: absolute;
@@ -414,7 +416,8 @@ button {
     background: #326795;
     cursor: pointer; }
     .sb-search i {
-      color: #fff; }
+      color: #fff;
+      font-size: 20px; }
   .sb-cancel {
     position: absolute;
     top: -64px;
@@ -424,7 +427,8 @@ button {
     background: #326795;
     cursor: pointer; }
     .sb-cancel i {
-      color: #fff; }
+      color: #fff;
+      font-size: 20px; }
 
 .sb_opened {
   display: block; }
@@ -448,15 +452,17 @@ button {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  color: #000; }
+  .services:hover {
+    color: #000;
+    text-decoration: none; }
   .services_move {
-    margin-left: -45px; }
+    margin-left: -40px; }
   .services img {
     height: 40px; }
-  .services a {
+  .services p {
     padding-left: 25px;
-    text-decoration: none;
-    color: #000;
     font-size: 13px; }
 
 /*section about*/
@@ -637,23 +643,32 @@ button {
       font-size: 14px; }
 
 .tv-title {
-  font-size: 28px;
-  margin-bottom: 30px; }
+  font-size: 28px; }
 
 .tv {
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  width: 570px;
+  overflow: hidden;
+  overflow-x: scroll;
+  white-space: nowrap; }
 
 .love {
-  margin-right: 30px; }
+  margin: 30px 10px 20px 5px;
+  display: inline-block;
+  vertical-align: top; }
   .love__img {
     background: url(../img/love.jpg) no-repeat;
     -webkit-background-size: cover;
             background-size: cover; }
 
-.zamershaja__img {
-  background: url(../img/zamershaja.jpg) no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover; }
+.zamershaja {
+  margin: 30px 10px 20px 5px;
+  display: inline-block;
+  vertical-align: top; }
+  .zamershaja__img {
+    background: url(../img/zamershaja.jpg) no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover; }
 
 .base-title {
   font-size: 28px;
